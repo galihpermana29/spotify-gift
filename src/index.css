@@ -1,13 +1,20 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+.rhap_container {
+	background-color: black !important;
+	width: 100% !important;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.rhap_current-time,
+.rhap_time {
+	color: white !important;
 }
+
+.rhap_volume-container {
+	display: none !important;
+}
+.rhap_controls-section {
+	//max-width: 500px !important;
+	margin: 0 auto !important;
+}
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

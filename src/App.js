@@ -1,25 +1,31 @@
-import logo from './logo.svg';
-import './App.css';
+import { createBrowserRouter } from 'react-router-dom';
+// import DetailSong from './Detail';
+import DetailCard from './DetailCard';
+import GuidedRoute from './GuidedRoute';
+import Home from './Home';
+import Login from './Login';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+export const currentRoutes = createBrowserRouter([
+	{
+		path: '/',
+		element: (
+			<GuidedRoute>
+				<Home />
+			</GuidedRoute>
+		),
+		// loader: rootLoader,
+	},
+	{
+		path: 'detail/:id',
+		element: (
+			<GuidedRoute>
+				<DetailCard />
+			</GuidedRoute>
+		),
+	},
 
-export default App;
+	{
+		path: 'login',
+		element: <Login />,
+	},
+]);
