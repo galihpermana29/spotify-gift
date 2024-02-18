@@ -9,7 +9,6 @@ import { useState } from 'react';
 
 const Home = () => {
 	const [id, setId] = useState(null);
-
 	const handlelogout = () => {
 		localStorage.removeItem('token_user');
 		window.location.reload();
@@ -34,7 +33,9 @@ const Home = () => {
 				{/* <h1 className="text-4xl my-6 font-bold max-w-[500px]">Oh no..., she is turning 19 right now.</h1> */}
 				<div className="bg-gradient-to-b from-pink-300 p-3">
 					<section>
-						<h1 className="text-2xl my-6 font-bold">Happy birthday to you.</h1>
+						<h1 className="text-2xl my-6 font-bold">
+							Hi widya jelek (cantik sebenarnya tapi males lah).
+						</h1>
 						<Row gutter={[12, 12]}>
 							{songsData.map((data) => {
 								return (
@@ -55,7 +56,7 @@ const Home = () => {
 				<div className=" p-3">
 					<section>
 						<h1 className="text-2xl my-6 font-bold">
-							30 moments when indah looks so pretty.
+							20 moments when widya looks so pretty.
 						</h1>
 						<Row gutter={[12, 12]}>
 							{indahData.map((data) => {
@@ -80,9 +81,9 @@ const Home = () => {
 							autoPlay
 							src={
 								id === '1'
-									? 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1668880740/SIVIA_-_ARE_YOU_MY_VALENTINE_Official_Lyric_Video_fzcxj6.mp4'
+									? 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1707913209/afiibno5igjnjsbwlpmf.mp3'
 									: id === 2
-									? 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1668881442/Sal_Priadi_-_Serta_Mulia_Official_Lyric_Video_igrgt1.mp4'
+									? 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1668880740/SIVIA_-_ARE_YOU_MY_VALENTINE_Official_Lyric_Video_fzcxj6.mp4'
 									: id === 3
 									? 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1668881442/Sal_Priadi_-_Serta_Mulia_Official_Lyric_Video_igrgt1.mp4'
 									: 'https://res.cloudinary.com/dfwrmapr4/video/upload/v1668879560/song1_fjocpe.mp4'

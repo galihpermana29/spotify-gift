@@ -9,7 +9,7 @@ const Login = () => {
 		const email = e.target[0].value;
 		const password = e.target[1].value;
 
-		if (email === 'indah@spotify.com' && password === 'indahgalih') {
+		if (email === 'widya@spotify.com' && password === 'galihpermana') {
 			localStorage.setItem('token_user', 'eyAS203920329012222');
 			navigate('/');
 		} else {
@@ -23,7 +23,8 @@ const Login = () => {
 				<h2 className="text-white text-3xl font-bold">Log In to Continue.</h2>
 				<p className="text-gray-300 text-center text-xs max-w-[350px]">
 					Before you log in into this website, please make sure you open this
-					website using google chrome browser or other browser except safari!! i repeat, except safari
+					website using google chrome browser or other browser except safari!! i
+					repeat, except safari
 				</p>
 				<form
 					onSubmit={handleLogin}

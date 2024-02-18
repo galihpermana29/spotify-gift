@@ -1,33 +1,23 @@
-import image1 from './assets/home/1.png';
-import image2 from './assets/home/2.png';
-import image3 from './assets/home/3.png';
-import image4 from './assets/home/4.png';
-import image5 from './assets/home/5.png';
-import image6 from './assets/home/6.png';
-import image7 from './assets/home/7.png';
-import image8 from './assets/home/8.png';
-import image9 from './assets/home/9.png';
-import image10 from './assets/home/10.png';
-import image11 from './assets/home/11.png';
-import image12 from './assets/home/12.png';
-import image13 from './assets/home/13.png';
-import image14 from './assets/home/14.png';
-import image15 from './assets/home/15.png';
-import image16 from './assets/home/16.png';
-import image17 from './assets/home/17.png';
-import image18 from './assets/home/18.png';
-import image19 from './assets/home/19.png';
-import image20 from './assets/home/20.png';
-import image21 from './assets/home/21.png';
-import image22 from './assets/home/22.png';
-import image23 from './assets/home/23.png';
-import image24 from './assets/home/24.png';
-import image25 from './assets/home/25.png';
-import image26 from './assets/home/26.png';
-import image27 from './assets/home/27.png';
-import image28 from './assets/home/28.png';
-import image29 from './assets/home/29.png';
-import image30 from './assets/home/30.png';
+import image1 from './assets/widya/1.jpg';
+import image2 from './assets/widya/2.jpg';
+import image3 from './assets/widya/3.jpg';
+import image4 from './assets/widya/4.jpg';
+import image5 from './assets/widya/5.jpg';
+import image6 from './assets/widya/6.jpg';
+import image7 from './assets/widya/7.jpg';
+import image8 from './assets/widya/8.jpg';
+import image9 from './assets/widya/9.jpg';
+import image10 from './assets/widya/10.jpg';
+import image11 from './assets/widya/11.jpg';
+import image12 from './assets/widya/12.jpg';
+import image13 from './assets/widya/13.jpg';
+import image14 from './assets/widya/14.jpg';
+import image15 from './assets/widya/15.jpg';
+import image16 from './assets/widya/16.jpg';
+import image17 from './assets/widya/17.jpg';
+import image18 from './assets/widya/18.jpg';
+import image19 from './assets/widya/19.jpg';
+import image20 from './assets/widya/20.jpg';
 
 const imgs = [
 	image1,
@@ -50,19 +40,8 @@ const imgs = [
 	image18,
 	image19,
 	image20,
-	image21,
-	image22,
-	image23,
-	image24,
-	image25,
-	image26,
-	image27,
-	image28,
-	image29,
-	image30,
 ];
 export const indahData = imgs.map((data, idx) => {
-	console.log(idx, 'data');
 	return {
 		title: `#${idx + 1}`,
 		img: imgs[idx],
@@ -75,28 +54,28 @@ export const songsData = [
 		title: 'Play this first',
 		songs: null,
 		isLyric: true,
-		img: image21,
+		img: image5,
 		id: 1,
 	},
 	{
 		title: 'a song #1',
 		songs: null,
 		isLyric: false,
-		img: image19,
+		img: image15,
 		id: 2,
 	},
 	{
 		title: 'a song #2',
 		songs: null,
 		isLyric: false,
-		img: image27,
+		img: image17,
 		id: 3,
 	},
 	{
 		title: 'a song #3',
 		songs: null,
 		isLyric: false,
-		img: image29,
+		img: image1,
 		id: 4,
 	},
 ];

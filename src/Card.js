@@ -1,7 +1,6 @@
 import { useNavigate } from 'react-router';
-import image1 from './assets/1.jpeg';
 const Card = ({
-	img = image1,
+	img = null,
 	direction = 'row',
 	title = '#1 Happy Birthday',
 	desc = 'Galih Permana',
@@ -14,7 +13,6 @@ const Card = ({
 		if (redirect) {
 			navigate(`/detail/${id}`);
 		} else {
-			console.log(id, setId);
 			setId(id);
 		}
 	};
